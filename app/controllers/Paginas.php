@@ -1,5 +1,5 @@
 <?php
-echo "Controlador por defecto sin entrar";
+echo "Controlador por defecto paginas sin entrar/";
 class Paginas extends Controlador
 {
     public function __construct()
@@ -9,11 +9,11 @@ class Paginas extends Controlador
 
     public function index()
     {
-        echo "Controlador por defecto ingresado al index";
+        echo "Controlador por defecto Paginas ingresado al index ";
     } 
 
-    public function articulo()
-    {
+    public function articulo($numero)
+    {   echo $numero;
         $datos = [
             'nombre' => 'Hola a todos en render'
         ];
